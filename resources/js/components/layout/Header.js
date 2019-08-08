@@ -40,7 +40,7 @@ return (
                         <img src="dist/img/user1-128x128.jpg" alt="User Avatar" className="img-size-50 mr-3 img-circle" />
                         <div className="media-body">
                             <h3 className="dropdown-item-title">
-                                Brad Diesel
+                                Brad Diesel aaaaaaaaaaaaaaaaaaaaa
                                 <span className="float-right text-sm text-danger"><i className="fas fa-star"></i></span>
                             </h3>
                             <p className="text-sm">Call me whenever you can...</p>
