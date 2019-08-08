@@ -65739,7 +65739,7 @@ function (_Component) {
         className: "media-body"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", {
         className: "dropdown-item-title"
-      }, "Brad Diesel aaaaaaaaaaaaaaaaaaaaa", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+      }, "Brad Diesel", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
         className: "float-right text-sm text-danger"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
         className: "fas fa-star"
