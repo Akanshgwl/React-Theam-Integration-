@@ -48,7 +48,7 @@ return (
                         </div>
                     </div>
                 </a>
-            </div>            
+            </div>             
         </li>
         <li className="nav-item dropdown">
         <a className="nav-link" data-toggle="dropdown" href="#">
