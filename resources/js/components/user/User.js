@@ -1,29 +1,29 @@
-import React, { Component }
-from 'react';
-import { Link }
-from 'react-router-dom';
+import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 import axios from 'axios';
 
 class User extends Component {
 
 constructor() {
-super();
+        super();
         this.state = {
-        users: []
-        }
+        users: [],
+        error: null
+    }
 }
 
 componentDidMount() {
     axios.get('/api/users').then(response => {
-        this.setState({
+            this.setState({
             users: response.data
         });
     })
 }
 
 render() {
-const {users} = this.state;
-        return (
+    const {users} = this.state;
+
+return (
 <div className="content-wrapper" >
     <section className="content-header">
         <div className="container-fluid">
@@ -45,7 +45,9 @@ const {users} = this.state;
             <div className="col-12">
                 <div className="card">
                     <div className="card-header">
-                        <h3 className="card-title">User List</h3>
+                        <h3 className="card-title">User List
+                        <Link to='add-user' className="btn btn-info float-right">Add User</Link>
+                        </h3>
                     </div>
                     <div className="card-body">
                         <table className="table table-hover">
@@ -71,13 +73,13 @@ const {users} = this.state;
                                                 <span className="sr-only">Toggle Dropdown</span>
                                             </button>
                                             <div className="dropdown-menu" >
-                                                <Link className="dropdown-item" to={`${user.id}`}>Edit</Link>
+                                                <Link className="dropdown-item" to={`edit-user/${user.id}`}>Edit</Link>
                                                 <Link className="dropdown-item" to={`${user.id}`}>Delete</Link>
                                             </div>
                                         </div>
                                     </td>
                                 </tr>
-                                ))}                
+                            ))}         
                             </tbody>
                         </table>
                     </div>
@@ -86,7 +88,7 @@ const {users} = this.state;
         </div>
     </section>
 </div>
-                                );
+                                        );
+                                }
                         }
-                }
-                export default User;
+                        export default User;

@@ -4,6 +4,7 @@ import Header from './layout/Header';
 import Nav from './layout/Nav';
 import User from './user/User';
 import Edituser from './user/Edituser';
+import Adduser from './user/Adduser';
 import Dashboard from './Dashboard';
 import ReactDOM from 'react-dom';
  
@@ -14,13 +15,14 @@ export default class Index extends Component {
                     <div>
                         <Header /> 
                         <Nav />
-                        <Switch>
+                    <Switch>
                         <Route exact path='/' component={Dashboard} />
                         <Route path='/user' component={User} />
-                        <Route path='/:id' component={Edituser} />
-                        </Switch> 
+                        <Route path='/add-user' component={Adduser} />    
+                        <Route path='/edit-user/:id' component={Edituser} />
+                    </Switch> 
                     </div>
-                </BrowserRouter> 
+                    </BrowserRouter> 
                 );
     }
 }

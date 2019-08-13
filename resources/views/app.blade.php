@@ -14,6 +14,7 @@
         <link rel="stylesheet" href="{{url('dist/css/adminlte.min.css')}}">
         <link rel="stylesheet" href="{{url('plugins/overlayScrollbars/css/OverlayScrollbars.min.css')}}">
         <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+        <link href="{{url('css/app.css')}}" rel="stylesheet">
         <!-- CSS -->
     </head>
     <body className="hold-transition sidebar-mini layout-fixed">
