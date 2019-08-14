@@ -33,7 +33,16 @@ class UserController extends Controller {
      * @return \Illuminate\Http\Response
      */
     public function store(Request $request) {
-        //
+        
+        
+
+        \App\User::create([
+            'name' => $request->name,
+            'email' => $request->email,
+            'password' => '$2y$10$d30EURMtLZPbRwGkiloZaeY2Z2t.lTRUYnB4NMx4HWVPruDqsJxAG',
+            'phone' => $request->phone,
+                //'name' => $request->message
+        ]);
     }
 
     /**

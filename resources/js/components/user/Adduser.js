@@ -37,9 +37,8 @@ class Adduser extends Component {
             message: this.state.message,
         }
 
-        axios.post('/api/projects', user)
+        axios.post('api/users/store', user)
                 .then(response => {
-                    // redirect to the homepage
                     history.push('/')
                 })
                 .catch(error => {
